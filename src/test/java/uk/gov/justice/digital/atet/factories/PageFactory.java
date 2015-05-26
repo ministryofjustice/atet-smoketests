@@ -2,11 +2,6 @@ package uk.gov.justice.digital.atet.factories;
 
 import org.openqa.selenium.WebDriver;
 
-
-
-
-
-import uk.gov.justice.digital.atet.page.HTMLPage;
 import uk.gov.justice.digital.atet.pages.ATETAboutTheClaimPage;
 import uk.gov.justice.digital.atet.pages.ATETAdditionalRespondentsPage;
 import uk.gov.justice.digital.atet.pages.ATETCheckYourClaimPage;
@@ -28,10 +23,6 @@ import uk.gov.justice.digital.atet.pages.ATETSavingYourClaimPage;
 import uk.gov.justice.digital.atet.pages.ATETStartPage;
 
 public class PageFactory {
-	
-	public static HTMLPage getHtmlPage(WebDriver driver) {
-		return new HTMLPage(driver);
-	}
 
 	public static ATETStartPage getATETStartPage(WebDriver driver) {
 		return new ATETStartPage(driver);
