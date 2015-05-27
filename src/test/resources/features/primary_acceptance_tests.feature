@@ -1,3 +1,4 @@
+@staging
 Feature: Primary acceptance tests to be used for smoke test
 
 
@@ -414,7 +415,7 @@ Then I am redirected to check your claim page
 And I click submit claim
 Then I am redirected to the claim submitted page
 
-@todo
+
 Scenario: Group Claimant - No Remission - Single Respondent
 
 Given I am on the start page
@@ -582,7 +583,9 @@ And I click the card payment button
 Then I am redirected to the claim submitted page
 
 
-Scenario: Remmission Generated
+
+
+Scenario: Group Claimant - No Remission - Multiple Respondent
 
 Given I am on the start page
 When I select to start a claim
@@ -590,7 +593,6 @@ Then I am directed to page 1 saving my claim
 When I enter a memorable word
 And I click save and continue
 Then I am directed to page 2 claimant details
-#claimant details
 When I select my title "Mr"
 And I enter my first name "Robert"
 And I enter my last name "Milroy"
@@ -613,11 +615,11 @@ And I click save and continue
 Then I am directed to page 3 group claims
 When I click Yes people are making a claim with me
 And I enter group claimant 1 title "Mr"
-And I enter group claimant 1 first name "Robert1"
+And I enter group claimant 1 first name "Robert"
 And I enter group claimant 1 last name "Milroy1"
 And I enter group claimant 1 DOB day number "20"
 And I enter group claimant 1 DOB month number "01"
-And I enter group claimant 1 DOB year "1989"
+And I enter group claimant 1 DOB year "1990"
 And I enter group claimant 1 address building number or name "3"
 And I enter group claimant 1 street address "Cheyney Close"
 And I enter group claimant 1 town or city "Steeple Morden"
@@ -625,11 +627,11 @@ And I enter group claimant 1 county "Hertfordshire"
 And I enter group claimant 1 postcode "SG8 0LT"
 And I click add another claimant
 And I enter group claimant 2 title "Mr"
-And I enter group claimant 2 first name "Robert2"
+And I enter group claimant 2 first name "Robert"
 And I enter group claimant 2 last name "Milroy2"
-And I enter group claimant 2 DOB day number "17"
-And I enter group claimant 2 DOB month number "04"
-And I enter group claimant 2 DOB year "1985"
+And I enter group claimant 2 DOB day number "20"
+And I enter group claimant 2 DOB month number "01"
+And I enter group claimant 2 DOB year "1991"
 And I enter group claimant 2 address building number or name "3"
 And I enter group claimant 2 street address "Cheyney Close"
 And I enter group claimant 2 town or city "Steeple Morden"
@@ -637,11 +639,11 @@ And I enter group claimant 2 county "Hertfordshire"
 And I enter group claimant 2 postcode "SG8 0LT"
 And I click add another claimant
 And I enter group claimant 3 title "Mr"
-And I enter group claimant 3 first name "Robert3"
+And I enter group claimant 3 first name "Robert"
 And I enter group claimant 3 last name "Milroy3"
-And I enter group claimant 3 DOB day number "23"
-And I enter group claimant 3 DOB month number "05"
-And I enter group claimant 3 DOB year "1972"
+And I enter group claimant 3 DOB day number "20"
+And I enter group claimant 3 DOB month number "01"
+And I enter group claimant 3 DOB year "1992"
 And I enter group claimant 3 address building number or name "3"
 And I enter group claimant 3 street address "Cheyney Close"
 And I enter group claimant 3 town or city "Steeple Morden"
@@ -682,7 +684,6 @@ And I enter the respondent work mobile or phone number "0987654321"
 And I enter the acas number "R000000/00/00"
 And I click save and continue
 Then I am directed to page 6 additional respondents page
-When I click NO there are no claims against other respondents
 When I click YES there are claims against other respondents
 And as additonal respondent 1 enter name "Robert Milroy"
 And as additonal respondent 1 enter address building number or name "3"
@@ -749,4 +750,24 @@ And I click YES I do have further information to add
 And I enter further information for my claim:
 |further information| 
 And I click save and continue
+Then I am redirected to the page 12 the fee page
+And I enter 2 claimant count
+And I click save and continue
+Then I am redirected to check your claim page
+And I click submit claim and move to payment
+Then I am redirected to the pay issue fee page
+And I click pay issue fee
+Then I am redirected to the pay fee by card page
+When I click pay by mastercard
+And I enter the card holders name "mickey mouse"
+And I enter the card number "4111111111111111"
+And I select the card expiry month "07"
+And I select the card expiry year "2015"
+And I enter the card verification number "111"
+And I click the card payment button
+Then I am redirected to the claim submitted page
+
+
+
+
 
