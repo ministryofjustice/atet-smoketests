@@ -581,6 +581,7 @@ And I enter the card number "4111111111111111"
 And I select the card expiry month "07"
 And I select the card expiry year "2015"
 And I enter the card verification number "111"
+And I capture a screen image "scenario_2"
 And I click the card payment button
 Then I am redirected to the claim submitted page
 
@@ -766,7 +767,7 @@ And I enter the card number "4111111111111111"
 And I select the card expiry month "07"
 And I select the card expiry year "2015"
 And I enter the card verification number "111"
-And I capture a screen image "scenario_2"
+And I capture a screen image "scenario_3"
 And I click the card payment button
 Then I am redirected to the claim submitted page
 
