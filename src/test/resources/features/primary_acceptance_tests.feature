@@ -250,7 +250,7 @@ And I click pay issue fee
 Then I am redirected to the pay fee by card page
 When I click pay by mastercard
 And I enter the card holders name "mickey mouse"
-And I enter the card number "4111111111111111"
+And I enter the card number "5399999999999999"
 And I select the card expiry month "07"
 And I select the card expiry year "2015"
 And I enter the card verification number "111"
@@ -577,7 +577,7 @@ And I click pay issue fee
 Then I am redirected to the pay fee by card page
 When I click pay by mastercard
 And I enter the card holders name "mickey mouse"
-And I enter the card number "4111111111111111"
+And I enter the card number "5399999999999999"
 And I select the card expiry month "07"
 And I select the card expiry year "2015"
 And I enter the card verification number "111"
@@ -763,7 +763,7 @@ And I click pay issue fee
 Then I am redirected to the pay fee by card page
 When I click pay by mastercard
 And I enter the card holders name "mickey mouse"
-And I enter the card number "4111111111111111"
+And I enter the card number "5399999999999999"
 And I select the card expiry month "07"
 And I select the card expiry year "2015"
 And I enter the card verification number "111"
