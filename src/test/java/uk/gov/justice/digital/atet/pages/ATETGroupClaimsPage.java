@@ -41,7 +41,6 @@ public class ATETGroupClaimsPage extends ATETPage {
 	}
 	
 	private void setText(int claimant, String field, String text) throws Exception{
-		System.out.println(String.format(field, claimant-1));
 		By byField = new By.ByXPath(String.format(field, claimant-1));
 		waitToGetElement(byField, HTTP_TIMEOUT);
 		setText(byField,text);	
