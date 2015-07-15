@@ -1,11 +1,13 @@
 package uk.gov.justice.digital.atet.factories;
 
-
+import java.util.Properties;
 
 public class FakeDataFactory {
 	
 	public static String getATETStartPageUrl(){
-        return "https://staging.et.dsd.io/apply";
+		String base_url = System.getProperty("base.url", "https://staging.et.dsd.io/apply");
+        System.out.println("base_url=" + base_url);
+        return base_url;
 	}
 	
 	public static String getATETMemorableWord(){

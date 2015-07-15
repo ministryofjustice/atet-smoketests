@@ -1,4 +1,4 @@
-@staging
+@staging @experimental
 Feature: Group Claimant - No Remission - Single Respondent
 
 Scenario: Group Claimant - No Remission - Single Respondent

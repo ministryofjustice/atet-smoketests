@@ -11,8 +11,30 @@
 		<org.picocontainer.version>2.14.3</org.picocontainer.version>
 		<operadriver.version>1.5</operadriver.version>
 	</properties>
+	<profiles>
+   		<profile>
+     		<id>staging</id>
+     		<properties>
+        	<base.url>https://staging.et.dsd.io/apply</base.url>
+     		</properties>
+   		</profile>
+   		<profile>
+     		<id>experimental</id>
+     		<properties>
+        		<base.url>https://experimental.et.dsd.io/apply</base.url>
+     		</properties>
+   		</profile>
+	</profiles>
 	<build>
 		<plugins>
+            <plugin>
+   				<groupId>org.apache.maven.plugins</groupId>
+         		<artifactId>maven-compiler-plugin</artifactId>
+          		<configuration>
+             		<source>1.7</source>
+              		<target>1.7</target>
+             	</configuration>
+       		</plugin>
 			<plugin>
 				<groupId>org.apache.maven.plugins</groupId>
 				<artifactId>maven-failsafe-plugin</artifactId>

@@ -1,4 +1,4 @@
-@staging
+@staging @experimental
 Feature: Single Person - Single Respondent - No remission
 
 Scenario: Single Person - Single Respondent - No remission - Mastercard Payment
