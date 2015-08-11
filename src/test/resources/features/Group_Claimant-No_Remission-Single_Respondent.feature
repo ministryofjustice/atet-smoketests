@@ -162,7 +162,7 @@ When I click pay by mastercard
 And I enter the card holders name "mickey mouse"
 And I enter the card number "5399999999999999"
 And I select the card expiry month "07"
-And I select the card expiry year "2015"
+And I select the card expiry year "2018"
 And I enter the card verification number "111"
 And I capture a screen image "scenario_2"
 And I click the card payment button
